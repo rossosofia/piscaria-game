@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Piscaria</title>
+</head>
+<body>  
+    <header class="fixed">
+        <a href="index.html">
+        <img id="logo" src="graphics/piscaria_logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="ul_nav">
+                <li class="nav_bar"><a href="asset.html">Assets</a></li>
+                <li class="nav_bar"><a href="activitydiagram.html">Activity Diagram</a></li>
+                <li class="nav_bar"><a href="SMD.html">State Machine Diagram</a></li>
+                <li class="nav_bar"><a href="https://fontpopulista.it/about/" target="_blank">About the Font</a></li>
+            </ul>
+        </nav>
+        <div class="credits" >
+            <p>
+            <br>Project by Sofia Amoroso.
+            <br>Basic Animation, Spring 2022
+            <br>AP Multimedia design
+            <br>KEA Copenhagen Business School</p></div>
+            </header>
+<main class="fluid">
+    <section id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="head2" class="floating"></div>
+            <div id="head_wrong" class="hidden"></div>
+            <div id="game_sprites">
+                <div id="fish1_container">
+                    <div id="fish1_sprite"></div>
+                </div>
+                
+                <div id="fish_old_container">
+                    <div id="fish_old_sprite"></div>
+                </div>
+                
+                <div id="fish_frozen_container">
+                    <div id="fish_frozen_sprite"></div>
+                </div>
+                
+            <div id="shrimp_fresh_container">
+                <div id="shrimp_fresh_sprite"></div>
+            </div>
+            
+            <div id="shrimp_old_container">
+                    <div id="shrimp_old_sprite"></div>
+                </div>
+                
+                <div id="shrimp_frozen_container">
+                    <div id="shrimp_frozen_sprite"></div>
+                </div>
+                
+            </div>
+            
+            <div id="game_iu" >
+                <div id="score_board">
+                    <span id="current_score" class="hidden">0</span>
+                </div>
+                <div id="score_weight"></div>
+                
+            <div id="time_board">
+                <span id="time_left" class="hidden">45</span>
+                <div id="time_sprite"></div>
+            </div>
+            <div id="time_sign"></div>
+            <div id="lives_board">
+                <span id="current_lives" class="hidden">3</span>
+            </div>
+            <div id="life_lemons"></div>
+        </div>
+
+
+        <div id="title_screen">
+            <div id="head" class="floating"></div>
+            <div id="lamp2" class="swinging"></div>
+            <div id="lamp_light" class="blinking"></div>
+
+            <div id="play_button"></div>
+            <div id="instruction_button"></div>
+        </div>
+        
+        <div id="instructions_screen">
+            <div id="head" class="floating"></div>
+            <div id="lamp2" class="swinging"></div>
+            <div id="lamp_light" class="blinking"></div>
+
+            <div id="play_button"></div>
+            <div id="instruction_button"></div>
+            <div id="back_button"></div>
+            <div id="play_button_2"></div>
+        </div>
+
+        <div id="win_screen">
+            <div id="play_again_button1"></div>
+        </div>
+        
+        <div id="lose_screen">
+            <div id="play_again_button2"></div>
+        </div>
+        
+        <div id="game_audio">
+        <audio id="welcomesound" src="sound/piscaria audio_01.mp3"></audio>
+        <audio id="collect_good" src="sound/click_good_sound.mp3"></audio>
+        <audio id="collect_bad" src="sound/click_bad_sound.mp3"></audio>
+    </div>
+        
+</section>
+</main>
+    <script src="js/piscaria.js"></script>
+</body>
+</html>
