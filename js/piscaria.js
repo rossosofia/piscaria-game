@@ -49,6 +49,7 @@ function hideAllScreens() {
     document.querySelector("#instructions_screen").classList.add("hidden");
     document.querySelector("#win_screen").classList.add("hidden");
     document.querySelector("#lose_screen").classList.add("hidden");
+    
 }
 
 
